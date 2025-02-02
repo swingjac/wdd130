@@ -1,7 +1,22 @@
-nav{
+header {
+	margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+    border-top: 10px solid #279BD4;
+    border-bottom: 10px solid #279BD4;
     background-color: #1B6DB6;
-    padding: 10px;
 }
+/* logo */
+header img {
+	margin: 0 0.25rem 0 1rem;
+	grid-column: 1;
+    width: 150px;
+	height: auto;
+    
+    
+}
+
 h1 {
     color: #ffffff;
     display: block;
@@ -12,11 +27,13 @@ h1 {
 h2 {
     color: #ffffff;
     display: block;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: #B9650A;
     text-align: center;
+    width: 100%;
 }
-main img {
+main section img {
     width: 150px;
     height: auto;
     border: 10px #1B6DB6;
@@ -25,10 +42,130 @@ main img {
 }
 p {padding: 0;}
 
+
+
+
+.adventure{
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+
+}
+
+.adventure img {
+	flex: 1 1 auto;
+    margin: 2%;
+    width: 15%;
+    height: fit-content;
+    align-content: center;
+}
+
+.adventure p {
+	flex: 1 1 auto;
+    margin: 10px;
+    text-align: justify;
+    text-align: center;
+}
+
+
+.hero{
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    border: 20px #B9650A;
+    box-shadow: 15px #B9650A;
+}
+
+
+
+
 footer nav a img{
     text-decoration: none;
 }
 
+
 a {
     text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+}
+
+
+/* rapids */
+.rapids img {
+    width: 150px;
+    height: auto;
+    border: 10px #1B6DB6;
+    padding: 2px;
+    box-shadow: 0 0 15px #B9650A;
+}
+.rapids {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.rapids img{
+    grid-column: 2;
+    width: 100%;
+
+}
+.rapids p{
+    grid-column: 1;
+    margin: 10px;
+    order: -1;
+}
+/* history */
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    
+    
+
+}
+.history h2{
+    grid-row: 1;
+    grid-column: 1/4;
+    order: -1;
+}
+.history img{
+    grid-row: 2;
+    grid-column: 2;
+    width: 100%;
+    order: 2;
+    margin: 0;
+
+    
+
+}
+.history p1{
+    grid-row: 2;
+    grid-column: 1;
+    margin: 20px;
+    order: 1;
+    
+}
+.history p2{
+    grid-row: 2;
+    grid-column: 3;
+    margin: 20px;
+    order: 1;
+}
+
+/* Footer */
+footer{
+    margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+    border-top: 10px solid #279BD4;
+    border-bottom: 10px solid #279BD4;
+    background-color: #1B6DB6; 
+}
+.sociallinks a{
+    grid-column: 3;
+}
+footer p{
+    grid-column: 2;
 }
