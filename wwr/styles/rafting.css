@@ -166,6 +166,76 @@ footer{
 .sociallinks a{
     grid-column: 3;
 }
+
 footer p{
     grid-column: 2;
+}
+
+
+/* portrait */
+.portrait {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    
+}
+.portrait h2{
+    grid-row: 1;
+    grid-column: 1/4;
+    order: -1;
+}
+.portrait img{
+    grid-row: 2;
+    width: 90%;
+    margin: 0;
+}
+.portrait p{
+    grid-row: 3;
+    margin: 10px;
+}
+
+
+
+.query{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.query form{
+    grid-row: 2;
+    order:1;
+}
+
+.query form{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    order:1;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.query form fieldset{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    order:1;
+
+}
+#feedback{
+    width: 100%;
+}
+.inquiry{
+    width: 100%;
+}
+
+
+.query iframe{
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+}
+.query h2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 1fr;
 }
